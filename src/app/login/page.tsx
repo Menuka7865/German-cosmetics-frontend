@@ -1,7 +1,7 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { ClosedCaption, Croissant, X } from 'lucide-react'
+import { X } from 'lucide-react'
 
 export default function LoginForm() {
   

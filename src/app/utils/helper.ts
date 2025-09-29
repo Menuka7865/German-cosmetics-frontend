@@ -1,0 +1,1 @@
+export const BASE_URL = "https://german.logisoftinternational.com/api/index.php"

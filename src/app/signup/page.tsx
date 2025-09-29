@@ -1,7 +1,7 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import { ArrowBigLeft, ArrowLeft, X } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 
 export default function page() {
   
@@ -80,7 +80,7 @@ export default function page() {
           <div className="text-sm text-gray-600">
             Already have an account?{' '}
             <a 
-              href="/signup" 
+              href="/login" 
               className="text-pink-500 hover:text-pink-600 font-medium"
             >
               Log in

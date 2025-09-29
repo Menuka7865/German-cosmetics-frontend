@@ -25,7 +25,7 @@ export default function ProductGrid() {
       id: 1,
       name: 'Bella Professional Taurin Locken Shampoo and Conditioner',
       price: 2750,
-      image: '/api/placeholder/200/200',
+      image: 'https://app.germancosmetic.lk/api/item-image/9376_item-image_1757495237.png',
       rating: 0,
       reviews: 0,
       category: 'Hair care'
@@ -34,7 +34,7 @@ export default function ProductGrid() {
       id: 2,
       name: 'Bioxine Vitamin C Glow Lotion',
       price: 5750,
-      image: '/api/placeholder/200/200',
+      image: 'https://app.germancosmetic.lk/api/item-image/9383_item-image_1758877947.png',
       rating: 0,
       reviews: 0,
       category: 'Skin Care'
@@ -43,7 +43,7 @@ export default function ProductGrid() {
       id: 3,
       name: 'Caro Light Brightening Cream',
       price: 6500,
-      image: '/api/placeholder/200/200',
+      image: 'https://app.germancosmetic.lk/api/item-image/9382_item-image_1758626373.png',
       rating: 0,
       reviews: 0,
       category: 'Skin Care'
@@ -52,7 +52,7 @@ export default function ProductGrid() {
       id: 4,
       name: 'Caro Light Lightening Beauty Cream',
       price: 6500,
-      image: '/api/placeholder/200/200',
+      image: 'https://app.germancosmetic.lk/api/item-image/9380_item-image_1758358394.png',
       rating: 0,
       reviews: 0,
       category: 'Skin Care'
@@ -61,7 +61,7 @@ export default function ProductGrid() {
       id: 5,
       name: 'Caro White Lightening Oil',
       price: 6500,
-      image: '/api/placeholder/200/200',
+      image: 'https://app.germancosmetic.lk/api/item-image/9317_item-image_1758461468.png',
       rating: 0,
       reviews: 0,
       category: 'Skin Care'
@@ -70,7 +70,7 @@ export default function ProductGrid() {
       id: 6,
       name: 'Caro White Lightening Oil',
       price: 6500,
-      image: '/api/placeholder/200/200',
+      image: 'https://app.germancosmetic.lk/api/item-image/9316_item-image_1758461649.png',
       rating: 0,
       reviews: 0,
       category: 'Skin Care'
@@ -79,7 +79,7 @@ export default function ProductGrid() {
       id: 7,
       name: 'Clinique All About Clean Liquid Facial Soap - Oily Skin Formula',
       price: 9500,
-      image: '/api/placeholder/200/200',
+      image: 'https://app.germancosmetic.lk/api/item-image/9314_item-image_1758025192.png',
       rating: 0,
       reviews: 0,
       category: 'Skin Care'
@@ -88,7 +88,7 @@ export default function ProductGrid() {
       id: 8,
       name: 'F.S. Silky Soft & Smooth Conditioner',
       price: 8275,
-      image: '/api/placeholder/200/200',
+      image: 'https://app.germancosmetic.lk/api/item-image/9310_item-image_1758528328.png',
       rating: 0,
       reviews: 0,
       category: 'Hair care'
@@ -97,7 +97,7 @@ export default function ProductGrid() {
       id: 9,
       name: 'Fair & White Exclusive Brightening Serum',
       price: 6500,
-      image: '/api/placeholder/200/200',
+      image: 'https://app.germancosmetic.lk/api/item-image/9305_item-image_1758532462.png',
       rating: 0,
       reviews: 0,
       category: 'Skin Care'
@@ -106,7 +106,7 @@ export default function ProductGrid() {
       id: 10,
       name: 'Fair & White Exclusive Power C Brightening Body Lotion',
       price: 6500,
-      image: '/api/placeholder/200/200',
+      image: 'https://app.germancosmetic.lk/api/item-image/9304_item-image_1758533224.png',
       rating: 0,
       reviews: 0,
       category: 'Skin Care'
@@ -115,7 +115,7 @@ export default function ProductGrid() {
       id: 11,
       name: 'Fair & White Exclusive Whitening',
       price: 6500,
-      image: '/api/placeholder/200/200',
+      image: 'https://app.germancosmetic.lk/api/item-image/9303_item-image_1758803656.png',
       rating: 0,
       reviews: 0,
       category: 'Skin Care'
@@ -124,7 +124,7 @@ export default function ProductGrid() {
       id: 12,
       name: 'Fair & White So White Lait Ultra',
       price: 6500,
-      image: '/api/placeholder/200/200',
+      image: 'https://app.germancosmetic.lk/api/item-image/9301_item-image_1758532325.png',
       rating: 0,
       reviews: 0,
       category: 'Skin Care'
@@ -256,6 +256,7 @@ export default function ProductGrid() {
             <div className={`relative group ${
               viewMode === 'list' ? 'w-48 h-48 flex-shrink-0' : 'aspect-square'
             }`}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={product.image}
                 alt={product.name}

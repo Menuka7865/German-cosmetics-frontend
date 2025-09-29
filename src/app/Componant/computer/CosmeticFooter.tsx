@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function CosmeticFooter() {
   return (
@@ -10,12 +11,8 @@ export default function CosmeticFooter() {
           <div className="flex-1 max-w-xs">
             {/* Logo */}
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 mr-3">
-                <img
-                  src="/logo.png" 
-                  alt="German Cosmetic"
-                  className="h-[50px] w-[50px] mt-[-5px]"
-                />
+              <div className="w-10 h-10 mr-3 relative">
+                <Image src="/logo.png" alt="German Cosmetic" fill className="object-contain" />
               </div>
               <div>
                 <div className="text-gray-400 text-xs">German</div>
@@ -112,12 +109,8 @@ export default function CosmeticFooter() {
           <div>
             {/* Logo */}
             <div className="flex items-center justify-center mb-4">
-              <div className="w-12 h-12 mr-3">
-                <img
-                  src="/logo.png" 
-                  alt="German Cosmetic"
-                  className="h-[60px] w-[60px] mt-[-5px]"
-                />
+              <div className="w-12 h-12 mr-3 relative">
+                <Image src="/logo.png" alt="German Cosmetic" fill className="object-contain" />
               </div>
               <div>
                 <div className="text-gray-400 text-sm">German</div>

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from 'next/image';
 import HeaderMenu from "../Componant/computer/HeaderMenu";
 import PinkNavigation from "../Componant/computer/PinkNavigation";
 import CosmeticFooter from "../Componant/computer/CosmeticFooter";
@@ -79,17 +80,17 @@ export default function Page() {
 
       <div className="mt-10 flex flex-col gap-4 ml-50 ">
         <div className="flex flex-row ml-10">
-          <div>
-            <img src="/banner.jpg" alt="banner" className="h-[100%]"/>
+          <div className="relative h-48 w-96">
+            <Image src="/banner.jpg" alt="banner" fill className="object-cover" />
           </div>
           <div className="flex flex-col gap-2 mt-4">
-            <div><img src="/offer2.jpg" alt="offer" className=" w-[40%] ml-8"/></div>
-            <div><img src="/offer2.jpg" alt="offer" className="w-[40%] ml-8" /></div>
+            <div className="relative w-40 h-28 ml-8"><Image src="/offer2.jpg" alt="offer" fill className="object-contain" /></div>
+            <div className="relative w-40 h-28 ml-8"><Image src="/offer2.jpg" alt="offer" fill className="object-contain" /></div>
           </div>
         </div>
         <div className="flex flex-row mb-30 ml-50 mt-20">
-          <div><img src="/offer1.jpg" alt="offer" /></div>
-          <div className="ml-50"><img src="/offer2.jpg" alt="offer" className="w-[50%]"/></div>
+          <div className="relative w-48 h-32"><Image src="/offer1.jpg" alt="offer" fill className="object-contain" /></div>
+          <div className="ml-50 relative w-48 h-32"><Image src="/offer2.jpg" alt="offer" fill className="object-contain" /></div>
         </div>
       </div>
 

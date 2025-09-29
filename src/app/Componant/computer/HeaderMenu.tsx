@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from "react";
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function HeaderMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,11 +13,9 @@ export default function HeaderMenu() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo Section */}
           <Link href="/" className="flex items-center space-x-2 align-middle">
-            <img
-              src="/logo.png"
-              alt="German Cosmetic"
-              className="h-[100px] w-[115px]"
-            />
+            <div className="relative h-[100px] w-[115px]">
+              <Image src="/logo.png" alt="German Cosmetic" fill className="object-contain" />
+            </div>
           </Link>
 
           {/* Search Section */}
@@ -156,11 +155,9 @@ export default function HeaderMenu() {
 
           {/* Mobile Logo */}
           <Link href="/" className="flex items-center">
-            <img
-              src="/logo.png"
-              alt="German Cosmetic"
-              className="h-12 w-auto"
-            />
+            <div className="relative h-12 w-28">
+              <Image src="/logo.png" alt="German Cosmetic" fill className="object-contain" />
+            </div>
           </Link>
 
           {/* Mobile Right Icons */}
@@ -190,7 +187,9 @@ export default function HeaderMenu() {
             <div className="fixed left-0 top-0 h-full w-80 bg-white shadow-lg" onClick={(e) => e.stopPropagation()}>
               <div className="p-4 border-b">
                 <div className="flex items-center justify-between">
-                  <img src="/logo.png" alt="German Cosmetic" className="h-10 w-auto" />
+                  <div className="relative h-10 w-28">
+                    <Image src="/logo.png" alt="German Cosmetic" fill className="object-contain" />
+                  </div>
                   <button onClick={() => setIsMenuOpen(false)}>
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />

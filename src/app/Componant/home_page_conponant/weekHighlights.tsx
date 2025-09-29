@@ -138,6 +138,7 @@ export default function WeekHighlights() {
                         <div key={product.id} className='flex-shrink-0 w-64 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group'>
                             <div className='p-4'>
                                 <div className='aspect-square mb-4 bg-gray-100 rounded-lg overflow-hidden relative'>
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
                                     <img
                                         src={product.image}
                                         alt={product.alt}
@@ -191,6 +192,7 @@ export default function WeekHighlights() {
                         <h5 className='text-green-800 font-bold text-2xl'>Rs. 3250</h5>
                     </div>
                     <div className='hidden md:block absolute right-0 top-0 w-1/2 h-full'>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img 
                             src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=300&fit=crop" 
                             alt="Lipstick and Creme" 
@@ -208,6 +210,7 @@ export default function WeekHighlights() {
                         <h5 className='text-orange-800 font-bold text-2xl'>Rs. 5975</h5>
                     </div>
                     <div className='hidden md:block absolute right-0 top-0 w-1/2 h-full'>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img 
                             src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=400&h=300&fit=crop" 
                             alt="Compact Powder" 
@@ -225,6 +228,7 @@ export default function WeekHighlights() {
                         <h5 className='text-purple-800 font-bold text-2xl'>Rs.8250</h5>
                     </div>
                     <div className='hidden md:block absolute right-0 top-0 w-1/2 h-full'>
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img 
                             src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&h=300&fit=crop" 
                             alt="Cleansing Gel" 

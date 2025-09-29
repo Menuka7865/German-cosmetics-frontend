@@ -42,6 +42,7 @@ export default function PopularCategories() {
                     {categories.map((category) => (
                         <div key={category.id} className="cursor-pointer">
                             <div className="rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img
                                     src={category.image}
                                     alt={category.alt}

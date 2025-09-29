@@ -128,11 +128,13 @@ export default function Discountsection() {
                             <div key={product.id} className='flex-shrink-0 w-64 bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden group'>
                                 <div className='p-4'>
                                     <div className='aspect-square mb-4 bg-gray-100 rounded-lg overflow-hidden relative'>
+                                        {/* eslint-disable-next-line @next/next/no-img-element */}
                                         <img
                                             src={product.image}
                                             alt={product.alt}
                                             className='w-full h-full object-cover hover:scale-105 transition-transform duration-300'
                                         />
+
                                         
                                         {/* Hover Icons */}
                                         <div className='absolute top-2 right-2 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>

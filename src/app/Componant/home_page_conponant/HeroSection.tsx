@@ -1,5 +1,6 @@
 import React from "react";
 import { Truck, ShoppingBag, Headphones, CreditCard, Gift } from "lucide-react";
+import Image from 'next/image';
 
 
 export default function HeroSection() {
@@ -9,11 +10,9 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {/* Left Big Banner */}
           <div className="relative col-span-2">
-            <img
-              src="/banner.jpg" // 🔹 Replace with your banner image
-              alt="Discount Banner"
-              className="w-full h-[450px] object-cover rounded-lg"
-            />
+            <div className="w-full h-[450px] relative rounded-lg overflow-hidden">
+              <Image src="/banner.jpg" alt="Discount Banner" fill className="object-cover" />
+            </div>
             
             {/* Overlay Content */}
             <div className="absolute top-0 left-0 w-full h-full rounded-lg flex items-center ml-[400px]">
@@ -44,11 +43,9 @@ export default function HeroSection() {
           <div className="flex flex-col gap-4 mt-6">
             {/* Top Card */}
             <div className="bg-pink-100 rounded-lg p-4 flex items-center h-[200px]">
-              <img
-                src="/offer1.jpg" // 🔹 Replace with product image
-                alt="Offer"
-                className="w-[400px] h-[190px] object-cover rounded-md mr-4"
-              />
+              <div className="w-[400px] h-[190px] relative rounded-md mr-4 overflow-hidden">
+                <Image src="/offer1.jpg" alt="Offer" fill className="object-cover" />
+              </div>
               <div>
                 <h3 className="text-lg font-semibold text-black">Amazing Sale Offer!</h3>
                 <p className="text-sm text-gray-600">Weekly Offers</p>
@@ -58,11 +55,9 @@ export default function HeroSection() {
             
             {/* Bottom Card */}
             <div className="bg-pink-100 rounded-lg p-4 flex items-center h-[200px]">
-              <img
-                src="/offer2.jpg" // 🔹 Replace with product image
-                alt="Cosmetic"
-                className="w-[400px] h-[190px] object-cover rounded-md mr-4"
-              />
+              <div className="w-[400px] h-[190px] relative rounded-md mr-4 overflow-hidden">
+                <Image src="/offer2.jpg" alt="Cosmetic" fill className="object-cover" />
+              </div>
               <div>
                 <h3 className="text-lg font-semibold text-black">Beauty Cosmetic</h3>
                 <p className="text-sm text-gray-600">Lowest Price</p>
